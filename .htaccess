@@ -1,0 +1,28 @@
+RewriteEngine On
+RewriteBase /
+
+
+# Auth routes
+RewriteRule ^register$ /doc_care/views/registerDoctor.php [L]
+RewriteRule ^login$ /doc_care/views/login.php [L]
+
+# Home route
+RewriteRule ^home$ /doc_care/views/home.php [L]
+
+# Patient routes
+RewriteRule ^patients$ /doc_care/views/patients.php [L]
+RewriteRule ^patients/add$ /doc_care/views/addPatient.php [L]
+RewriteRule ^patients/delete/([0-9]+)$ /doc_care/views/viewPatient.php?id=$1 [L]
+RewriteRule ^patients/view/([0-9]+)$ /doc_care/views/viewPatient.php?id=$1 [L]
+
+# Appointment routes
+RewriteRule ^appointments$ /doc_care/views/getAllappointments.php [L]
+RewriteRule ^appointments/add$ /doc_care/views/addAppointment.php [L]
+RewriteRule ^appointments/view/([0-9]+)$ /doc_care/views/appointment.php?id=$1 [L]
+
+# Medical record routes
+RewriteRule ^records/add$ /doc_care/views/addMedicalRecord.php [L]
+
+# Doctor routes
+RewriteRule ^doctors$ /doc_care/views/doctors.php [L]
+RewriteRule ^doctors/view/([0-9]+)$ /doc_care/views/doctor_profile.php?id=$1 [L]

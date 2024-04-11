@@ -1,0 +1,164 @@
+/* Google Fomts */
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,497;1,6..12,75..125,200..1000,497&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+}
+
+
+
+body{
+    background-color: #02002C;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+
+}
+
+.logo{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 180px;
+    height: 80px;
+
+}
+
+.humburger{
+    display: none;
+
+
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #fff;
+    padding: 10px 25px;
+    transition: 0.2s;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover{
+    background-color: #fff;
+    color: #02002C;
+}
+
+.nav-bar ul li a.active{
+    background-color: #fff;
+    color: #02002C;
+}
+
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .humburger{
+        color: #fff;
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .nav-bar{
+        height: 450px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: #02002C;
+        transition: 0.5s;
+        display: none;
+        z-index: 1000;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 80px auto 0 auto;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 1000;
+        opacity: 0;
+    }
+
+    .nav-bar ul li{
+        margin-bottom: 20px 0;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+
+    .nav-bar.active{
+        height: 450px;
+        display: block;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+}
+.table-responsive-jaafar{
+    padding: 1000px;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+/* Index.php */
+@media only screen and (max-width: 900px){
+    #w-msg{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    #w-msg{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
